@@ -16,8 +16,8 @@
                 <li><a href="#contact">Contact</a></li>
             </div>
             <div class="login">
-                <li><a href="/views/checkout.view.php"><img class ="cart" src="/assets/img/shopping-cart.svg" alt='shoppingCart'></li>
-                <li><a href="#login">Login</a></li>                  
+                <li><a href="/views/cart.view.php"><img class ="cart" src="/assets/img/shopping-cart.svg" alt='shoppingCart'></li>
+                <li><a href="/views/checkout.view.php">Login</a></li>                  
             </div>
         </nav>
     </header>
