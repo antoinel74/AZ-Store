@@ -168,7 +168,11 @@ body {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  transition: all 0.3s ease;
   transform: scale(0.8);
+}
+.product-card figure img:hover {
+  transform: scale(0.8) rotate(22deg);
 }
 
 .product-info {
