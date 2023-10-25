@@ -1,26 +1,26 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "product": "NIKE Air Max 270",
     "price": 199,
     "image_url": "/assets/img/shoe_one.png"
   },
   {
-    "id": 2,
+    "id": 1,
     "product": "NIKE Air Max 999",
     "price": 189,
     "image_url": "/assets/img/shoe_two.png"
   },
   {
-    "id": 3,
-    "product": "NIKE Air Max 270",
+    "id": 2,
+    "product": "NIKE Air Max 250",
     "price": 199,
     "image_url": "/assets/img/shoe_one.png"
   },
   {
-    "id": 4,
-    "product": "NIKE Air Max 999",
-    "price": 189,
+    "id": 3,
+    "product": "NIKE Air Max 89",
+    "price": 188,
     "image_url": "/assets/img/shoe_two.png"
   }
 ]
