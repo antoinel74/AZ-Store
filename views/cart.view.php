@@ -10,6 +10,20 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
             $product = $products[$productId];
             echo '<p>Products ' . $product['product'] . '</p>';
             echo '<p>' . $product['price'] . '</p>';
+            echo '<form method="post">';
+            echo '<input type="hidden" name="productId" value="' . $productId . '">';
+            echo '<button type="submit" name="removeProduct">Remove from Cart</button>';
+            echo '</form>';
+        }
+    }
+
+    if (isset($_POST['removeProduct'])) {
+        $productId = $_POST['productId'];
+        $key = array_search($productId, $_SESSION['cart']);
+        if ($key !== false) {
+            unset($_SESSION['cart'][$key]);
+            header('Location: cart.view.php');
+            exit;
         }
     }
 } else {
