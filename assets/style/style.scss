@@ -1,4 +1,7 @@
-@import "/assets/style/vendors/reset";
-@import "/assets/style/base/fonts";
-@import "/assets/style/base/var";
-@import "/assets/style/base/mixins";
+@import "vendors/reset";
+@import "base/fonts";
+@import "base/var";
+@import "base/mixins";
+
+@import "components/products";
+@import "components/buttons";

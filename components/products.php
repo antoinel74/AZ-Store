@@ -1,5 +1,4 @@
 <?php
-
 $json_data = file_get_contents('../db/db.json');
 $products = json_decode($json_data, true);
 
@@ -7,6 +6,7 @@ $products = json_decode($json_data, true);
 print_r($products);
 ?>
 
+<link rel="stylesheet" href="/assets/style/style.css" type="text/css">
 
 <?php foreach ($products as $product) : ?>
     <div class="product-card">
