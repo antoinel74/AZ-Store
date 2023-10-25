@@ -146,7 +146,6 @@ body {
   margin-bottom: 1rem;
   width: 300px;
   height: 250px;
-  justify-content: space-around;
 }
 .product-card p {
   font-size: 1.4rem;
@@ -335,4 +334,17 @@ body {
   font-size: 0.8rem;
   text-align: center;
   line-height: 1.8;
+}
+
+.topnav {
+  display: flex;
+  flex-direction: row;
+  background-color: #111827;
+}
+.topnav .store {
+  text-decoration: none;
+  color: white;
+}
+.topnav .login .cart {
+  width: 25px;
 }/*# sourceMappingURL=style.css.map */
