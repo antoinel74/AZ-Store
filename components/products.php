@@ -1,7 +1,7 @@
 <?php
 session_start();
 
-$jsonFilePath = '..' . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR . 'db.JSON';
+$jsonFilePath = '..' . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR . 'db.json';
 $json_data = file_get_contents($jsonFilePath);
 $products = json_decode($json_data, true);
 
