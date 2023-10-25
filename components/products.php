@@ -7,8 +7,17 @@ $products = json_decode($json_data, true);
 print_r($products);
 ?>
 
-<ul>
-    <?php foreach ($products as $product);
-    echo '<li>Price :' . $product['price'];
-    ?>
-</ul>
+
+<?php foreach ($products as $product) : ?>
+    <div class="product-card">
+        <figure>
+            <img src="<?php echo $product['image_url']; ?>" alt="product-img" class="product-img">
+        </figure>
+        <div class="product-info">
+            <p><?php echo $product['product']; ?>
+                <span><?php echo $product['price']; ?></span>
+            </p>
+            <button id="addToCart" class="btn btn--add">Add to cart</button>
+        </div>
+    </div>
+<?php endforeach; ?>
