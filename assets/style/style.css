@@ -347,4 +347,36 @@ body {
 }
 .topnav .login .cart {
   width: 25px;
+}
+
+.cart-item {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(65, 102, 187, 0.495);
+  margin-bottom: 2rem;
+}
+.cart-item .cart-product {
+  font-weight: 700;
+}
+.cart-item .cart-price {
+  font-weight: 200;
+}
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  transform: scale(0.8);
+}
+.cart-item button {
+  padding: 0.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  padding: 2rem 0;
 }/*# sourceMappingURL=style.css.map */
