@@ -1,5 +1,8 @@
 <?php
-$json_data = file_get_contents('db/db.json');
+session_start();
+
+$jsonFilePath = '.' . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR . 'db.json';
+$json_data = file_get_contents($jsonFilePath);
 $products = json_decode($json_data, true);
 
 // TESTING // 
@@ -23,3 +26,19 @@ $products = json_decode($json_data, true);
         </div>
     </div>
 <?php endforeach; ?>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['addToCart'])) {
+        $productId = $_POST['productId'];
+
+        // Initialize the cart if it doesn't exist
+        if (!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = [];
+        }
+
+        // Add the selected product to the cart array
+        $_SESSION['cart'][] = $productId;
+    }
+}
+?>
