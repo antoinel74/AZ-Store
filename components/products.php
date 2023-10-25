@@ -9,7 +9,7 @@ $products = json_decode($json_data, true);
 /* print_r($products); */
 ?>
 
-<link rel="stylesheet" href="assets/style/style.css" type="text/css">
+<link rel="stylesheet" href="../assets/style/style.css" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
@@ -22,7 +22,10 @@ $products = json_decode($json_data, true);
             <p><?php echo $product['product']; ?>
                 <span><?php echo $product['price'] . '€' ?></span>
             </p>
-            <button id="addToCart" class="btn btn--add">Add to cart</button>
+            <form method="post" action="">
+                <input type="hidden" name="productId" value="<?php echo $product['id']; ?>">
+                <button name="addToCart" class="btn">Add to cart</button>
+            </form>
         </div>
     </div>
 <?php endforeach; ?>
@@ -32,12 +35,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['addToCart'])) {
         $productId = $_POST['productId'];
 
-        // Initialize the cart if it doesn't exist
         if (!isset($_SESSION['cart'])) {
             $_SESSION['cart'] = [];
         }
 
-        // Add the selected product to the cart array
         $_SESSION['cart'][] = $productId;
     }
 }
