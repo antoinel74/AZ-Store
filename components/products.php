@@ -1,7 +1,8 @@
 <?php
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-$json_data = file_get_contents('../db/db.json');
+session_start();
+
+$jsonFilePath = '..' . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR . 'db.json';
+$json_data = file_get_contents($jsonFilePath);
 $products = json_decode($json_data, true);
 
 // TESTING // 
@@ -20,7 +21,24 @@ $products = json_decode($json_data, true);
             <p><?php echo $product['product']; ?>
                 <span><?php echo $product['price'] . '€' ?></span>
             </p>
-            <button id="addToCart" class="btn btn--add">Add to cart</button>
+            <form method="post" action="">
+                <input type="hidden" name="productId" value="<?php echo $product['id']; ?>">
+                <button name="addToCart" class="btn">Add to cart</button>
+            </form>
         </div>
     </div>
 <?php endforeach; ?>
+
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (isset($_POST['addToCart'])) {
+        $productId = $_POST['productId'];
+
+        if (!isset($_SESSION['cart'])) {
+            $_SESSION['cart'] = [];
+        }
+
+        $_SESSION['cart'][] = $productId;
+    }
+}
+?>
