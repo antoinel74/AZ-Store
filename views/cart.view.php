@@ -42,4 +42,4 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
 }
 ?>
 
-<button id="checkout-btn" onclick="window.location.href='views/checkout.view.php'">Go to Checkout</button>
+<button id="checkout-btn" onclick="window.location.href='checkout.view.php'">Go to Checkout</button>
