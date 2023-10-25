@@ -36,7 +36,7 @@
 
     <section class="opinions">
         <?php
-        require "../../opinion.php";
+        require "opinion.php";
         foreach ($opinions as $opinion) {
             echo "
                         <article class='article-opinion'>
