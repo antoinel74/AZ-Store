@@ -1,13 +1,14 @@
 <?php
-$json_data = file_get_contents('../db/db.json');
+$json_data = file_get_contents('db/db.json');
 $products = json_decode($json_data, true);
 
 // TESTING // 
 /* print_r($products); */
 ?>
 
-<link rel="stylesheet" href="/assets/style/style.css" type="text/css">
+<link rel="stylesheet" href="assets/style/style.css" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
 <?php foreach ($products as $product) : ?>
     <div class="product-card">
