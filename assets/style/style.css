@@ -193,6 +193,11 @@ body {
   letter-spacing: 1;
   cursor: pointer;
   font-size: 0.7rem;
+  transition: all 0.2s ease;
+}
+.btn:hover {
+  background-color: white;
+  color: #3470db;
 }
 
 body {
@@ -444,4 +449,34 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   padding: 2rem 0;
+}
+
+.cart-checkout {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+#price-total {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  margin-right: 2em;
+  font-weight: 200;
+}
+#price-total span {
+  font-weight: 600;
+}
+
+@media screen and (min-width: 768px) {
+  .shopping-cart {
+    margin: 0 10%;
+  }
+  .cart-checkout {
+    margin: 0 -10%;
+  }
+  .page-title {
+    margin: 0 10%;
+  }
 }/*# sourceMappingURL=style.css.map */

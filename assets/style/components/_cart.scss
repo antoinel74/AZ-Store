@@ -29,3 +29,33 @@
   font-weight: 600;
   padding: 2rem 0;
 }
+
+.cart-checkout {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+#price-total {
+  color: white;
+  font-family: $mainFont;
+  margin-right: 2em;
+  font-weight: 200;
+  span {
+    font-weight: 600;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shopping-cart {
+    margin: 0 10%;
+  }
+  .cart-checkout {
+    margin: 0 -10%;
+  }
+  .page-title {
+    margin: 0 10%;
+  }
+}

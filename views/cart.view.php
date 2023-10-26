@@ -38,8 +38,25 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         }
     }
 } else {
-    echo '<p>Your cart is empty :"(</p>';
+    echo '<p class="cart-empty">Your cart is empty :"(</p>';
+}
+
+$cartTotal = cartTotal($_SESSION['cart'], $products);
+
+function cartTotal($cart, $products)
+{
+    $total = 0;
+    foreach ($cart as $productId) {
+        if (isset($products[$productId])) {
+            $total += $products[$productId]['price'];
+        }
+    }
+    return $total;
 }
 ?>
 
-<button id="checkout-btn" onclick="window.location.href='checkout.view.php'">Go to Checkout</button>
+
+<div class="cart-checkout">
+    <p id="price-total">Total : <span> <?php echo $cartTotal ?> € </span></p>
+    <button id="checkout-btn" class="btn" onclick="window.location.href='checkout.view.php'">Go to Checkout</button>
+</div>
