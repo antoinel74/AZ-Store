@@ -580,4 +580,53 @@ body {
   font-size: 0.8rem;
   text-align: center;
   line-height: 1.8;
+}
+
+.success {
+  color: #07ee07;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.checkout-form {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 20px;
+  padding-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+}
+.checkout-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+.checkout-form input[type=text],
+.checkout-form input[type=email] {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  background: #eee4ec;
+  color: black;
+}
+.checkout-form input[type=submit] {
+  background-color: #3470db;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: bold;
+}
+.checkout-form input[type=submit]:hover {
+  background-color: #cb8fbf;
 }/*# sourceMappingURL=style.css.map */
