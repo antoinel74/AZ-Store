@@ -1,5 +1,6 @@
 <?php
-session_start();
+/* session_start(); */
+$products = [];
 
 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     $json_data = file_get_contents('../db/db.json');

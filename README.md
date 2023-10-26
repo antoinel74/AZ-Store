@@ -5,8 +5,6 @@
 This project is part of the Becode PHP course.
 A small e-shop app built in `PHP`.
 
-Team : Antoine LANSMAN, Rosalie BOULARD, Okly IRADUKUNDA.
-
 ### Features
 
 - Display the products stored in a db

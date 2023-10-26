@@ -418,6 +418,10 @@ body {
   width: 25px;
   filter: brightness(200%) invert(100%);
 }
+.topnav .login li span {
+  font-weight: 200;
+  font-size: 0.9rem;
+}
 
 .cart-item {
   color: white;

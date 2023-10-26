@@ -1,4 +1,5 @@
 <html>
+
 <?php
 
 require "../views/partials/head.php";

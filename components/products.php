@@ -1,5 +1,5 @@
 <?php
-session_start();
+/* session_start(); */
 
 $jsonFilePath = '.' . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR . 'db.json';
 $json_data = file_get_contents($jsonFilePath);
