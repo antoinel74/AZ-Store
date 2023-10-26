@@ -9,9 +9,6 @@ $products = json_decode($json_data, true);
 /* print_r($products); */
 ?>
 
-
-
-
 <?php foreach ($products as $product) : ?>
     <div class="product-card">
         <figure>
@@ -39,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         $_SESSION['cart'][] = $productId;
+        header('Location: index.php');
     }
 }
 ?>

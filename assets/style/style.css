@@ -200,19 +200,17 @@ body {
   color: #3470db;
 }
 
-body {
-  margin-left: 5%;
-  margin-right: 5%;
-}
-
 .index {
-  margin-top: 2.5%;
+  margin-top: 10%;
+  margin-bottom: 5%;
+  padding-bottom: 5%;
   position: relative;
   display: flex;
   flex-direction: row;
   height: 400px;
   border-bottom: solid rgb(142, 144, 170) 0.1px;
   justify-content: space-around;
+  overflow: hidden;
 }
 .index .intro {
   display: flex;
@@ -228,10 +226,10 @@ body {
   color: white;
 }
 .index .intro h2 .blue {
-  color: #0061BA;
+  color: #0061ba;
 }
 .index .intro .see-store {
-  background: linear-gradient(90deg, #49A8FF 0%, #007CEE 100%);
+  background: linear-gradient(90deg, #49a8ff 0%, #007cee 100%);
   border: none;
   color: white;
   border-radius: 8px;
@@ -261,23 +259,24 @@ body {
 }
 
 .latest-product {
-  margin-top: 2.5%;
-  margin-bottom: 5%;
+  margin: 5% 5%;
 }
 .latest-product h3 {
-  font-size: 20px;
+  font-size: 2rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: bold;
   color: white;
   margin-bottom: 40px;
 }
 .latest-product h3 .blue {
-  color: #0061BA;
+  color: #0061ba;
 }
 .latest-product .products {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 .marketing {
@@ -301,7 +300,7 @@ body {
   margin-bottom: 2%;
 }
 .marketing .provide .blue {
-  color: #0061BA;
+  color: #0061ba;
 }
 .marketing .text-marketing {
   color: rgb(177, 177, 177);
@@ -315,10 +314,15 @@ body {
 .opinions {
   display: flex;
   flex-direction: row;
+  margin-bottom: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 5%;
+  margin: 5% 0;
   gap: 5%;
+}
+.opinions .article-opinion {
+  width: 300px;
 }
 .opinions .article-opinion .people {
   border-radius: 50%;
@@ -341,6 +345,12 @@ body {
   line-height: 1.8;
 }
 
+@media (max-width: 468px) {
+  .index {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .topnav {
   display: flex;
   flex-direction: row;
@@ -538,6 +548,11 @@ body {
   border-radius: 5%;
 }
 
+@media screen and (max-width: 768px) {
+  .footer {
+    font-size: 0.8rem;
+  }
+}
 .opinions {
   display: flex;
   flex-direction: row;
