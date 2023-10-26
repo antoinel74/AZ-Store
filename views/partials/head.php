@@ -4,4 +4,5 @@
 <meta name="description" content="Basic e-commerce page for a sneaker shop" />
 <meta name="author" content="Antoine LANSMAN, Rosalie BOULARD, Okly IRADUKUNDA" />
 <title>AZ Store - Smash The ground !</title>
+<script src="https://kit.fontawesome.com/4018be7e05.js" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="../../assets/style/style.css" type="text/css">

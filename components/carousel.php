@@ -1,6 +1,6 @@
 <?php
     echo "<section class='opinions'>";
-    require "opinion.php";
+    require "components/opinion.php";
         foreach ($opinions as $opinion) {
             echo "  
                 <article class='article-opinion'>

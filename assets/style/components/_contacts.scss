@@ -1,0 +1,63 @@
+.info {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    margin: 2% 0% 5% 0%;
+}
+
+.contact {
+    
+    border-right: solid 1px rgb(42, 39, 78);
+    width: 50%;
+    .formContact {
+        color: white;
+        font-family: "Nunito Sans", sans-serif;
+        font-size: 2rem;
+        text-align: center;
+    }
+    form {
+        padding-top: 2.5%;
+        label {
+            color: white;
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 1rem;
+        }
+        input {
+            width: 500px;
+            margin: 0% 0% 5% 0%;
+        }
+        .inputMessage {
+            height: 200px;
+        }
+        .btn {
+            font-family:"Nunito Sans", sans-serif;
+            font-size: 1rem;
+        }
+    }
+}
+
+.network {
+    ul {
+        text-align: center;
+        .following {
+            color: white;
+            font-family: "Nunito Sans", sans-serif;
+            font-size: 2rem;
+            margin-bottom: 25%;
+        }
+        li {
+            list-style-type: none;
+
+            img {
+                width: 40px;
+                filter: brightness(200%) invert(100%); 
+            }
+            i {
+                font-size: 2rem;
+                color: white;
+                text-align:center;
+                margin: 5% 0% 5% 0%;
+            }
+        }
+    }
+}
