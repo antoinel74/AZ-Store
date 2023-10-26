@@ -163,13 +163,14 @@ body {
   height: 300px;
   aspect-ratio: 16/9;
   overflow: hidden;
-  box-shadow: rgba(22, 21, 21, 0.14) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(22, 21, 21, 0.14) 0px 3px 6px,
+    rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .product-card figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
   transition: all 0.3s ease;
   transform: scale(0.8);
 }
@@ -223,10 +224,10 @@ body {
   color: white;
 }
 .index .intro h2 .blue {
-  color: #0061BA;
+  color: #0061ba;
 }
 .index .intro .see-store {
-  background: linear-gradient(90deg, #49A8FF 0%, #007CEE 100%);
+  background: linear-gradient(90deg, #49a8ff 0%, #007cee 100%);
   border: none;
   color: white;
   border-radius: 8px;
@@ -267,7 +268,7 @@ body {
   margin-bottom: 40px;
 }
 .latest-product h3 .blue {
-  color: #0061BA;
+  color: #0061ba;
 }
 .latest-product .products {
   display: flex;
@@ -296,7 +297,7 @@ body {
   margin-bottom: 2%;
 }
 .marketing .provide .blue {
-  color: #0061BA;
+  color: #0061ba;
 }
 .marketing .text-marketing {
   color: rgb(177, 177, 177);
@@ -411,5 +412,36 @@ body {
 }
 .topnav .login li .cart {
   width: 25px;
-  filter: brightness(200%) invert(100%);
-}/*# sourceMappingURL=style.css.map */
+}
+
+.cart-item {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(65, 102, 187, 0.495);
+  margin-bottom: 2rem;
+}
+.cart-item .cart-product {
+  font-weight: 700;
+}
+.cart-item .cart-price {
+  font-weight: 200;
+}
+.cart-item img {
+  width: 70px;
+  height: 70px;
+  transform: scale(0.8);
+}
+.cart-item button {
+  padding: 0.5rem;
+}
+
+.page-title {
+  font-size: 2rem;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 600;
+  padding: 2rem 0;
+} /*# sourceMappingURL=style.css.map */
