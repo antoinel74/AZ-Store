@@ -163,14 +163,13 @@ body {
   height: 300px;
   aspect-ratio: 16/9;
   overflow: hidden;
-  box-shadow: rgba(22, 21, 21, 0.14) 0px 3px 6px,
-    rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(22, 21, 21, 0.14) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .product-card figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   transition: all 0.3s ease;
   transform: scale(0.8);
 }
@@ -224,10 +223,10 @@ body {
   color: white;
 }
 .index .intro h2 .blue {
-  color: #0061ba;
+  color: #0061BA;
 }
 .index .intro .see-store {
-  background: linear-gradient(90deg, #49a8ff 0%, #007cee 100%);
+  background: linear-gradient(90deg, #49A8FF 0%, #007CEE 100%);
   border: none;
   color: white;
   border-radius: 8px;
@@ -268,7 +267,7 @@ body {
   margin-bottom: 40px;
 }
 .latest-product h3 .blue {
-  color: #0061ba;
+  color: #0061BA;
 }
 .latest-product .products {
   display: flex;
@@ -297,7 +296,7 @@ body {
   margin-bottom: 2%;
 }
 .marketing .provide .blue {
-  color: #0061ba;
+  color: #0061BA;
 }
 .marketing .text-marketing {
   color: rgb(177, 177, 177);
@@ -412,6 +411,7 @@ body {
 }
 .topnav .login li .cart {
   width: 25px;
+  filter: brightness(200%) invert(100%);
 }
 
 .cart-item {
@@ -444,4 +444,4 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   padding: 2rem 0;
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
