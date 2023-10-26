@@ -349,7 +349,7 @@ body {
   justify-content: space-between;
 }
 .topnav .store {
-  padding-left: 15%;
+  padding-left: 5%;
   display: flex;
 }
 .topnav .store li {
@@ -391,7 +391,7 @@ body {
   border-radius: 5%;
 }
 .topnav .login {
-  padding-right: 15%;
+  padding-right: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -423,6 +423,20 @@ body {
   font-size: 0.9rem;
 }
 
+@media screen and (max-width: 768px) {
+  .topnav .store {
+    padding-left: 0%;
+  }
+  .topnav .login {
+    padding-right: 0%;
+  }
+  .topnav .login li a {
+    padding: 0;
+  }
+  .topnav .homeAbout {
+    display: none;
+  }
+}
 .cart-item {
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -461,6 +475,15 @@ body {
   justify-content: end;
   align-items: center;
   margin: 2rem 0;
+}
+
+.cart-empty {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  font-family: "Nunito Sans", sans-serif;
+  padding: 2rem 0;
+  font-weight: 200;
 }
 
 #price-total {
