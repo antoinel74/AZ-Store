@@ -627,4 +627,21 @@ body {
   color: white;
   text-align: center;
   margin: 5% 0% 5% 0%;
+}
+
+p {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.space {
+  margin-top: 50px;
+}
+
+.btn {
+  margin-left: 30%;
+  margin-top: 5%;
+  font-size: 2rem;
 }/*# sourceMappingURL=style.css.map */
