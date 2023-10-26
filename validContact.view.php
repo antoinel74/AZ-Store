@@ -14,7 +14,9 @@
         echo "<p>and your message: " . $message . "</p><br>";
         echo "<p class='space'>Is that correct? </p><br>";
         echo "<input class='btn' type='submit' name='submit' value='Yes'/>";
-        echo "<input class='btn' type='submit' name='submit' value='No'/>";
+        ?>
+        <button class="btn" onclick='window.location.href="index.php"'>No</button>
+<?php
 
     }
 

@@ -6,4 +6,5 @@
     <meta name="author" content="Antoine LANSMAN, Rosalie BOULARD, Okly IRADUKUNDA" />
     <title>AZ Store - Smash The ground !</title>
     <link rel="stylesheet" href="../../assets/style/style.css" type="text/css">
+    <script src="https://kit.fontawesome.com/4018be7e05.js" crossorigin="anonymous"></script>
 </head>
