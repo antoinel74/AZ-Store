@@ -164,11 +164,13 @@ body {
   aspect-ratio: 16/9;
   overflow: hidden;
   box-shadow: rgba(22, 21, 21, 0.14) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  box-shadow: rgba(22, 21, 21, 0.14) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 .product-card figure img {
   width: 100%;
   height: 100%;
   -o-object-fit: contain;
+     object-fit: contain;
      object-fit: contain;
   transition: all 0.3s ease;
   transform: scale(0.8);
@@ -224,8 +226,10 @@ body {
 }
 .index .intro h2 .blue {
   color: #0061BA;
+  color: #0061BA;
 }
 .index .intro .see-store {
+  background: linear-gradient(90deg, #49A8FF 0%, #007CEE 100%);
   background: linear-gradient(90deg, #49A8FF 0%, #007CEE 100%);
   border: none;
   color: white;
@@ -268,6 +272,7 @@ body {
 }
 .latest-product h3 .blue {
   color: #0061BA;
+  color: #0061BA;
 }
 .latest-product .products {
   display: flex;
@@ -296,6 +301,7 @@ body {
   margin-bottom: 2%;
 }
 .marketing .provide .blue {
+  color: #0061BA;
   color: #0061BA;
 }
 .marketing .text-marketing {
@@ -336,81 +342,82 @@ body {
   line-height: 1.8;
 }
 
-.topnav {
+.footer {
   display: flex;
   flex-direction: row;
   background-color: #111827;
   border-bottom: solid 1px rgb(42, 39, 78);
   justify-content: space-between;
 }
-.topnav .store {
+.footer .store {
   padding-left: 15%;
   display: flex;
 }
-.topnav .store li {
+.footer .store li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .store li a {
+.footer .store li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .store li a:hover {
+.footer .store li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
 }
-.topnav .homeAbout {
+.footer .homeAbout {
   display: flex;
   gap: 30px;
 }
-.topnav .homeAbout li {
+.footer .homeAbout li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .homeAbout li a {
+.footer .homeAbout li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .homeAbout li a:hover {
+.footer .homeAbout li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
 }
-.topnav .login {
+.footer .login {
   padding-right: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .login li {
+.footer .login li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .login li a {
+.footer .login li a {
   text-decoration: none;
   color: white;
   margin-right: 10px;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .login li a:hover {
+.footer .login li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
 }
-.topnav .login li .cart {
+.footer .login li .cart {
   width: 25px;
+  filter: brightness(200%) invert(100%);
   filter: brightness(200%) invert(100%);
 }
 
