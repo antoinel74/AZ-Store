@@ -1,11 +1,13 @@
 <?php
-session_start();
+/* session_start(); */
+$products = [];
 
 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     $json_data = file_get_contents('../db/db.json');
     $products = json_decode($json_data, true);
     echo '<h1 class="page-title">Shopping Cart</h1>';
     echo '<ul class="shopping-cart">';
+    $totalQuantity = count($_SESSION['cart']);
 
     foreach ($_SESSION['cart'] as $productId) {
         if (isset($products[$productId])) {
@@ -33,13 +35,15 @@ if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
         }
     }
 } else {
-    echo '<p class="cart-empty">Your cart is empty :"(</p>';
+    echo '<p class="cart-empty">Your cart is empty.</p>';
+    $totalQuantity = 0;
 }
 
 $cartTotal = cartTotal($_SESSION['cart'], $products);
 
 function cartTotal($cart, $products)
 {
+
     $total = 0;
     foreach ($cart as $productId) {
         if (isset($products[$productId])) {

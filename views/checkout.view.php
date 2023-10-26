@@ -22,7 +22,9 @@
             if (filter_var($email, FILTER_VALIDATE_EMAIL) && is_numeric($zip)) {
                 // empty the shopping cart
                 if (isset($_SESSION['cart'])) {
-                    unset($_SESSION['cart']);
+                    foreach ($_SESSION['cart'] as $key => $value) {
+                        unset($_SESSION['cart'][$key]);
+                    }
                     echo "<p>Thank you for your order</p>";
                 }
             } else {

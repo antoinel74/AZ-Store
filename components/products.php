@@ -1,5 +1,5 @@
 <?php
-session_start();
+/* session_start(); */
 
 $jsonFilePath = '.' . DIRECTORY_SEPARATOR . 'db' . DIRECTORY_SEPARATOR . 'db.json';
 $json_data = file_get_contents($jsonFilePath);
@@ -8,7 +8,6 @@ $products = json_decode($json_data, true);
 // TESTING // 
 /* print_r($products); */
 ?>
-
 
 <?php foreach ($products as $product) : ?>
     <div class="product-card">
@@ -37,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
 
         $_SESSION['cart'][] = $productId;
+        header('Location: index.php');
     }
 }
 ?>
