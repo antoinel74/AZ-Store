@@ -12,7 +12,7 @@
         </div>
         <div class="login">
             <li><a href="/views/cart.view.php"><img class="cart" src="/assets/img/shopping-cart.svg" alt='shoppingCart'></li>
-            <li><a href="/views/checkout.view.php">Login</a></li>
+            <li><a href="#">Login</a></li>
         </div>
     </nav>
 </header>

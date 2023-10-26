@@ -10,8 +10,6 @@ $products = json_decode($json_data, true);
 ?>
 
 
-
-
 <?php foreach ($products as $product) : ?>
     <div class="product-card">
         <figure>
