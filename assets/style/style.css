@@ -475,4 +475,33 @@ body {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
+}
+
+.opinions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+  gap: 5%;
+}
+.opinions .article-opinion .people {
+  border-radius: 50%;
+  width: 80px;
+  margin-left: 40%;
+  margin-bottom: 5%;
+}
+.opinions .article-opinion .name {
+  font-family: "Nunito Sans", sans-serif;
+  color: white;
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2.5%;
+}
+.opinions .article-opinion .review {
+  font-family: "Nunito Sans", sans-serif;
+  color: rgb(148, 148, 148);
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.8;
 }/*# sourceMappingURL=style.css.map */
