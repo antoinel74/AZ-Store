@@ -3,6 +3,7 @@
 
 <head>
     <title>Shipping Information</title>
+    <link rel="stylesheet" href="../assets/style/style.css">
 </head>
 
 <body>
@@ -25,7 +26,7 @@
                     foreach ($_SESSION['cart'] as $key => $value) {
                         unset($_SESSION['cart'][$key]);
                     }
-                    echo "<p>Thank you for your order</p>";
+                    echo "<p class='success'>Thank you for your order</p>";
                 }
             } else {
                 echo "<p>Please enter a valid email and zip code</p>";
@@ -44,7 +45,7 @@
     }
     ?>
 
-    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
+    <form class="checkout-form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" required><br><br>
 

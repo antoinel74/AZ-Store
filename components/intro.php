@@ -7,8 +7,8 @@
                 <button class='see-store'>See our store</button>
             </div>
             <div class='images'>
-                <img class='logo' src='../assets/img/Nike-logo.svg'>
-                <img class='shoe' src='../assets/img/shoe_one.png'>
+                <img class='logo' src='./assets/img/Nike-logo.svg'>
+                <img class='shoe' src='./assets/img/shoe_one.png'>
             </div>
         </section>
     "
