@@ -1,0 +1,54 @@
+.success {
+    color: #07ee07;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+    font-family:$mainFont;
+}
+
+.checkout-form {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 20px;
+    padding-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: $mainFont;
+    color: $white;
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+    }
+    input[type="text"],
+    input[type="email"]{
+        width: 100%;
+   
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: $mainFont;
+    background:#eee4ec;
+    color:black;
+    
+   
+   
+    }
+    input[type="submit"] {
+        background-color: $highBlue;
+        color: $white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: $mainFont;
+        font-weight: bold;
+        
+    }
+    input[type="submit"]:hover {
+        background-color: #cb8fbf;
+    }
+    
+}

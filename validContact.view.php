@@ -9,9 +9,9 @@
         // process the form data here
 
         // display the data to the user
-        echo "<p>You entered your name: " . $name . ",</p><br>";
-        echo "<p>Email: " . $mail . ",</p><br>";
-        echo "<p>and your message: " . $message . "</p><br>";
+        echo "<p class='contactinfo'>You entered your name: " . $name . ",</p><br>";
+        echo "<p class='contactinfo'>Email: " . $mail . ",</p><br>";
+        echo "<p class='contactinfo'>and your message: " . $message . "</p><br>";
         echo "<p class='space'>Is that correct? </p><br>";
         echo "<input class='btn' type='submit' name='submit' value='Yes'/>";
         ?>
