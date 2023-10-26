@@ -183,6 +183,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.product-info p {
+  font-size: 0.9rem;
+}
+.product-info span {
+  font-size: 1rem;
+}
 
 .btn {
   background-color: #3470db;
