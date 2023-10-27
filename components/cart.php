@@ -58,6 +58,6 @@ function cartTotal($cart, $products)
 
 <div class="cart-checkout">
     <p id="price-total">Total : <span> <?php echo $cartTotal ?> € </span></p>
-    <button id="checkout-btn" class="btn" onclick="window.location.href='checkout.view.php'">Go to Checkout</button>
+    <button id="checkout-btn" class="btn" onclick="window.location.href='checkout.view.php'">Order Now!</button>
 </div>
 </div>

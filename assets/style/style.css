@@ -480,6 +480,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.9rem;
   border-bottom: 1px solid rgba(65, 102, 187, 0.495);
   margin-bottom: 2rem;
 }
@@ -536,6 +537,9 @@ body {
 @media screen and (min-width: 768px) {
   .shopping-cart {
     margin: 0 10%;
+  }
+  .cart-item {
+    font-size: 1rem;
   }
   .cart-checkout {
     margin: 0 -10%;
@@ -649,7 +653,7 @@ footer {
 .checkout-form label {
   display: block;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 200;
 }
 .checkout-form input[type=text],
 .checkout-form input[type=email] {
@@ -669,7 +673,7 @@ footer {
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 400;
   letter-spacing: 1;

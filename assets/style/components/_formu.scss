@@ -29,7 +29,7 @@
   label {
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 200;
   }
   input[type="text"],
   input[type="email"] {
@@ -49,7 +49,7 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-family: $mainFont;
     font-weight: 400;
     letter-spacing: 1;
