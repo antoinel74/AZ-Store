@@ -43,19 +43,29 @@ $cartTotal = cartTotal($_SESSION['cart'], $products);
 
 function cartTotal($cart, $products)
 {
-
+    
     $total = 0;
+    $totalTVA = 0;
     foreach ($cart as $productId) {
         if (isset($products[$productId])) {
             $total += $products[$productId]['price'];
+            $totalTVA += $products[$productId]['price'] / 1.20; // assuming TVA is 20%
         }
     }
-    return $total;
+    //return $total;
+    return array(
+        'total' => $total,
+        'totalTVA' => $totalTVA
+    );
 }
 ?>
 
 
+
 <div class="cart-checkout">
-    <p id="price-total">Total : <span> <?php echo $cartTotal ?> € </span></p>
+    <p id="price-total-tva">Total  : <span> <?php echo $cartTotal['totalTVA'] ?> € </span></p>
+    <p id="price-total">TOTAL+TVA : <span> <?php echo $cartTotal['total'] ?> € </span></p>
     <button id="checkout-btn" class="btn" onclick="window.location.href='checkout.view.php'">Go to Checkout</button>
 </div>
+
+
