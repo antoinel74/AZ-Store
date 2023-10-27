@@ -1,3 +1,7 @@
+.cart-container {
+  margin: 2rem 1rem;
+}
+
 .cart-item {
   color: white;
   font-family: $mainFont;
@@ -35,7 +39,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 2rem 0;
+  padding-bottom: 3rem;
 }
 
 .cart-empty {

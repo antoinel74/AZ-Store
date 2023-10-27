@@ -470,6 +470,10 @@ body {
     display: none;
   }
 }
+.cart-container {
+  margin: 2rem 1rem;
+}
+
 .cart-item {
   color: white;
   font-family: "Nunito Sans", sans-serif;
@@ -507,7 +511,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 2rem 0;
+  padding-bottom: 3rem;
 }
 
 .cart-empty {
@@ -622,6 +626,7 @@ footer {
 }
 .checkout-container .checkout-form {
   width: 50%;
+  margin-top: 2rem;
 }
 
 .success {
