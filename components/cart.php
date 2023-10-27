@@ -53,7 +53,10 @@ function cartTotal($cart, $products)
             $totalTVA += $products[$productId]['price'] / 1.20; // assuming TVA is 20%
         }
     }
-    return $total;
+    return array(
+        'total' => $total,
+        'totalTVA' => $totalTVA
+    );
 }
 ?>
 
