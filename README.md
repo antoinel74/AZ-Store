@@ -18,7 +18,7 @@ and consist to a small e-shop app built in `PHP`.
 
 ## Preview
 
-![desktopUI_preview](/assets/img/preview.png) -->
+![desktopUI_preview](/assets/img/preview.png)
 
 ## Team / Contact
 
