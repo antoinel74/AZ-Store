@@ -14,7 +14,7 @@ if (isset($_SESSION['cart'])) {
     <nav class="topnav">
         <div class="store">
             <ul>
-                <li><a href="index.php">AZ[store]</a></li>
+                <li><a href="../index.php">AZ[store]</a></li>
             </ul>
         </div>
         <div class="homeAbout">
