@@ -80,6 +80,8 @@
         align-items: center;
 
         a {
+          display: flex;
+          align-items: center;
           text-decoration: none;
           color: white;
           margin-right: 10px;

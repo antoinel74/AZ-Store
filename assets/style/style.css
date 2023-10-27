@@ -183,12 +183,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.product-info p {
-  font-size: 0.9rem;
-}
-.product-info span {
-  font-size: 1rem;
-}
 
 .btn {
   background-color: #3470db;
@@ -436,6 +430,8 @@ body {
   align-items: center;
 }
 .topnav .login ul li a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
   margin-right: 10px;
@@ -655,17 +651,17 @@ footer {
   display: block;
   margin-bottom: 10px;
   font-weight: 200;
+  font-size: 0.9rem;
 }
 .checkout-form input[type=text],
 .checkout-form input[type=email] {
   width: 100%;
   height: 30px;
-  border: none;
+  border: 0.5px solid rgba(65, 102, 187, 0.495);
   border-radius: 8px;
-  font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
-  background: white;
-  color: black;
+  background: transparent;
+  color: white;
 }
 .checkout-form input[type=submit] {
   background-color: #3470db;
