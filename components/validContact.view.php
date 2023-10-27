@@ -1,6 +1,6 @@
 <?php
-    require "./views/partials/head.php";
-    require "./views/partials/nav.php";
+    require "../views/partials/head.php";
+    require "../views/partials/nav.php";
     if (isset($_POST['name'], $_POST['mail'], $_POST['message'])) {
         $name = $_POST['name'];
         $mail = $_POST['mail'];
@@ -19,7 +19,7 @@
         ?>
         <!-- <form method='post'> -->
         <div class="btns-cont">
-            <button class='btns' onclick='window.location.href="validMessage.php"'>Yes</button>
+            <button class='btns' onclick='window.location.href="./validMessage.php"'>Yes</button>
         <!-- </form> onclick button qui envoie sur une nouvelle page avec un bouton qui permet de retourner sur la page principale -->
         <!--<?php
         // if ($_POST['submit']==='Yes') {
@@ -29,10 +29,10 @@
         // }
         // ?>
         -->
-            <button class="btns" onclick='window.location.href="contact.view.php"'>No</button>
+            <button class="btns" onclick='window.location.href="./contact.view.php"'>No</button>
         </div>
         <?php
     }
 
-    require "./views/partials/footer.php";
+    require "../views/partials/footer.php";
     ?>

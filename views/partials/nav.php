@@ -16,10 +16,10 @@ if (isset($_SESSION['cart'])) {
             <li><a href="index.php">AZ[store]</a></li>
         </div>
         <div class="homeAbout">
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.view.php">About</a></li>
-            <li><a href="index.php#products">Products</a></li>
-            <li><a href="contact.view.php">Contact</a></li>
+            <li><a href="../index.php">Home</a></li>
+            <li><a href="/components/about.view.php">About</a></li>
+            <li><a href="../index.php#products">Products</a></li>
+            <li><a href="/components/contact.view.php">Contact</a></li>
         </div>
         <div class="login">
             <li><a href="../views/cart.view.php"><img class="cart" src="../assets/img/shopping-cart.svg" alt='shoppingCart'><span class="cart-notif">(<?php echo $totalQuantity; ?>)</span></li>

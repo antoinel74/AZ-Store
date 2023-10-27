@@ -4,7 +4,7 @@
     <section class="info">
         <div class="contact">
             <h2 class="formContact">Contact Us!</2>
-            <form method="POST" action="validContact.view.php">
+            <form method="POST" action="./validContact.view.php">
                 <label class="name" for="name">
                     Name:
                 </label>
