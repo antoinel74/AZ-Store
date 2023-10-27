@@ -530,6 +530,13 @@ body {
     margin: 0 10%;
   }
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -759,6 +766,10 @@ body {
   color: white;
   text-align: center;
   margin: 5% 0% 5% 0%;
+}
+
+body {
+  position: relative;
 }
 
 .textinfo {
