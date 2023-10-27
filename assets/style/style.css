@@ -149,7 +149,7 @@ body {
   height: 250px;
 }
 .product-card p {
-  font-size: 1.4rem;
+  font-size: 1rem;
   font-weight: 600;
   display: flex;
   flex-direction: column;
@@ -157,7 +157,7 @@ body {
 }
 .product-card span {
   font-weight: 200;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 .product-card figure {
   position: relative;
@@ -183,12 +183,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-.product-info p {
-  font-size: 0.9rem;
-}
-.product-info span {
-  font-size: 1rem;
-}
 
 .btn {
   background-color: #3470db;
@@ -205,6 +199,10 @@ body {
 .btn:hover {
   background-color: white;
   color: #3470db;
+}
+
+body {
+  position: relative;
 }
 
 .index {
@@ -369,19 +367,23 @@ body {
   padding-left: 5%;
   display: flex;
 }
-.topnav .store li {
+.topnav .store ul {
+  display: flex;
+  flex-direction: row;
+}
+.topnav .store ul li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .store li a {
+.topnav .store ul li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .store li a:hover {
+.topnav .store ul li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
@@ -390,19 +392,23 @@ body {
   display: flex;
   gap: 30px;
 }
-.topnav .homeAbout li {
+.topnav .homeAbout ul {
+  display: flex;
+  flex-direction: row;
+}
+.topnav .homeAbout ul li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .homeAbout li a {
+.topnav .homeAbout ul li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .homeAbout li a:hover {
+.topnav .homeAbout ul li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
@@ -413,29 +419,35 @@ body {
   justify-content: center;
   align-items: center;
 }
-.topnav .login li {
+.topnav .login ul {
+  display: flex;
+  flex-direction: row;
+}
+.topnav .login ul li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .login li a {
+.topnav .login ul li a {
+  display: flex;
+  align-items: center;
   text-decoration: none;
   color: white;
   margin-right: 10px;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .login li a:hover {
+.topnav .login ul li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
 }
-.topnav .login li .cart {
+.topnav .login ul li .cart {
   width: 25px;
   filter: brightness(200%) invert(100%);
 }
-.topnav .login li span {
+.topnav .login ul li span {
   font-weight: 200;
   font-size: 0.9rem;
 }
@@ -454,12 +466,17 @@ body {
     display: none;
   }
 }
+.cart-container {
+  margin: 0 1rem;
+}
+
 .cart-item {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-size: 0.9rem;
   border-bottom: 1px solid rgba(65, 102, 187, 0.495);
   margin-bottom: 2rem;
 }
@@ -491,7 +508,7 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  margin: 2rem 0;
+  padding-bottom: 3rem;
 }
 
 .cart-empty {
@@ -517,6 +534,9 @@ body {
   .shopping-cart {
     margin: 0 10%;
   }
+  .cart-item {
+    font-size: 1rem;
+  }
   .cart-checkout {
     margin: 0 -10%;
   }
@@ -524,6 +544,13 @@ body {
     margin: 0 10%;
   }
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -562,17 +589,18 @@ body {
 }
 .opinions {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5%;
-  margin-top: 2%;
+  padding-bottom: 5%;
+  margin-top: 3%;
   gap: 5%;
+}
+.opinions .article-opinion {
+  margin-bottom: 1rem;
 }
 .opinions .article-opinion .people {
   border-radius: 50%;
   width: 80px;
-  margin-left: 40%;
   margin-bottom: 5%;
 }
 .opinions .article-opinion .name {
@@ -587,11 +615,23 @@ body {
   color: rgb(148, 148, 148);
   font-size: 0.8rem;
   text-align: center;
-  line-height: 1.8;
+  line-height: 1.5;
+}
+
+.checkout-container {
+  display: flex;
+  width: 100%;
+}
+.checkout-container .cart-container {
+  width: 50%;
+}
+.checkout-container .checkout-form {
+  width: 50%;
+  margin-top: 3rem;
 }
 
 .success {
-  color: #07ee07;
+  color: #328c32;
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
@@ -599,46 +639,60 @@ body {
 }
 
 .checkout-form {
-  max-width: 500px;
-  margin: 0 auto;
+  margin: 2rem 1rem;
   margin-top: 15px;
   padding: 20px;
   padding-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   font-family: "Nunito Sans", sans-serif;
   color: white;
 }
 .checkout-form label {
   display: block;
   margin-bottom: 10px;
-  font-weight: bold;
+  font-weight: 200;
+  font-size: 0.9rem;
 }
 .checkout-form input[type=text],
 .checkout-form input[type=email] {
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+  height: 30px;
+  border: 0.5px solid rgba(65, 102, 187, 0.495);
+  border-radius: 8px;
   font-family: "Nunito Sans", sans-serif;
-  background: #eee4ec;
-  color: black;
+  background: transparent;
+  color: white;
 }
 .checkout-form input[type=submit] {
   background-color: #3470db;
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 0.8rem;
   font-family: "Nunito Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 1;
 }
 .checkout-form input[type=submit]:hover {
-  background-color: #cb8fbf;
+  background-color: #328c32;
 }
 
+@media (max-width: 768px) {
+  .checkout-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkout-container .cart-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .checkout-container .checkout-form {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 .story {
   padding-top: 2%;
   padding-bottom: 2%;
@@ -657,7 +711,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   width: 900px;
-  margin-left: 15%;
+  margin: 0 auto;
   line-height: 1.3;
 }
 
@@ -679,7 +733,7 @@ body {
   font-size: 1.2rem;
   text-align: center;
   width: 900px;
-  margin-left: 15%;
+  margin: 0 auto;
   line-height: 1.3;
 }
 
@@ -695,6 +749,63 @@ body {
   padding-bottom: 2%;
 }
 
+@media (max-width: 468px) {
+  .story h2 {
+    font-size: 2rem;
+  }
+  .story p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  .quality h2 {
+    font-size: 2rem;
+  }
+  .quality p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  .reviews h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 468px) and (max-width: 768px) {
+  .story h2 {
+    font-size: 3rem;
+  }
+  .story p {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  .quality h2 {
+    font-size: 3rem;
+  }
+  .quality p {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  .reviews h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1056px) {
+  .story h2 {
+    font-size: 3rem;
+  }
+  .story p {
+    font-size: 1rem;
+    max-width: 700px;
+  }
+  .quality h2 {
+    font-size: 3rem;
+  }
+  .quality p {
+    font-size: 1rem;
+    max-width: 700px;
+  }
+  .reviews h2 {
+    font-size: 3rem;
+  }
+}
 .info {
   display: flex;
   flex-direction: row;
@@ -714,6 +825,7 @@ body {
 }
 .contact form {
   padding-top: 2.5%;
+  height: 80vh;
 }
 .contact form label {
   color: white;
@@ -722,14 +834,28 @@ body {
 }
 .contact form input {
   width: 500px;
-  margin: 0% 0% 5% 0%;
+  margin: 0 auto;
 }
 .contact form .inputMessage {
   height: 200px;
 }
-.contact form .btn {
+.contact form .btnsubmit {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
+  background-color: #3470db;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: all 0.2s ease;
+}
+.contact form .btnsubmit:hover {
+  background-color: white;
+  color: #3470db;
 }
 
 .network ul {
@@ -752,10 +878,59 @@ body {
   font-size: 2rem;
   color: white;
   text-align: center;
-  margin: 5% 0% 5% 0%;
+  margin: 0 auto;
 }
 
-.contactinfo {
+@media (max-width: 468px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact .formContact {
+    font-size: 1.5rem;
+  }
+  .contact .formContact form label {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .contact .formContact form input {
+    max-width: 100px;
+    margin: 0% 0% 5% 0%;
+  }
+  .network ul .following {
+    font-size: 1.5rem;
+  }
+  .network ul li img {
+    width: 25px;
+  }
+  .network ul li i {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+@media (min-width: 468px) and (max-width: 1055px) {
+  .contact .formContact form {
+    height: 70vh;
+  }
+  .contact .formContact form label {
+    font-size: 1rem;
+  }
+  .contact .formContact form input {
+    max-width: 200px;
+  }
+  .contact .formContact form .btnsubmit {
+    display: block;
+  }
+}
+body {
+  position: relative;
+}
+
+.textinfo {
+  margin: 5% 0% 5% 0%;
+  height: 80vh;
+}
+.textinfo .contactinfo {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
@@ -764,4 +939,78 @@ body {
 
 .space {
   margin-top: 50px;
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.btns-cont {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.btns-cont .btns {
+  background-color: #3470db;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+.btns-cont .btns:hover {
+  background-color: white;
+  color: #3470db;
+}
+
+.valid {
+  height: 80vh;
+}
+
+.newmessage {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 4rem;
+  max-width: 50rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.btnback-cont {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.btnback-cont .btnback {
+  background-color: #3470db;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+.btnback-cont .btnback:hover {
+  background-color: white;
+  color: #3470db;
+}
+
+@media (max-width: 468px) {
+  .newmessage {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 468px) and (max-width: 1055px) {
+  .newmessage {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */

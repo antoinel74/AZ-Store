@@ -6,7 +6,6 @@
 }
 
 .contact {
-    
     border-right: solid 1px rgb(42, 39, 78);
     width: 50%;
     .formContact {
@@ -17,6 +16,7 @@
     }
     form {
         padding-top: 2.5%;
+        height: 80vh;
         label {
             color: white;
             font-family: "Nunito Sans", sans-serif;
@@ -24,14 +24,28 @@
         }
         input {
             width: 500px;
-            margin: 0% 0% 5% 0%;
+            margin: 0 auto;
         }
         .inputMessage {
             height: 200px;
         }
-        .btn {
+        .btnsubmit {
             font-family:"Nunito Sans", sans-serif;
             font-size: 1rem;
+            background-color: $highBlue;
+            border: none;
+            color: $white;
+            border-radius: 8px;
+            padding: 1rem 1rem;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            letter-spacing: 1;
+            cursor: pointer;
+            font-size: 0.7rem;
+            transition: all 0.2s ease;
+            &:hover {
+              background-color: $white;
+              color: $highBlue;
+            }
         }
     }
 }
@@ -56,8 +70,66 @@
                 font-size: 2rem;
                 color: white;
                 text-align:center;
-                margin: 5% 0% 5% 0%;
+                margin: 0 auto;
             }
         }
+    }
+}
+
+@media (max-width: 468px) {
+    .contact {
+        height:100vh;
+        .formContact {
+            font-size:1.5rem;
+            form {
+                label {
+                    color: white;
+                    font-family: "Nunito Sans", sans-serif;
+                    font-size: 1rem;
+                }
+                input {
+                    max-width: 100px;
+                    margin: 0% 0% 5% 0%;
+                }
+            }
+        }
+        
+    }
+    .network {
+        ul {
+            .following {
+                font-size: 1.5rem;
+            }
+            li {    
+                img {
+                    width: 25px;
+                }
+                i {
+                    font-size: 1.5rem;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 468px) and (max-width: 1055px) {
+    .contact {
+        
+        .formContact {
+            form {
+                height:70vh;
+                label {
+                    font-size: 1rem;
+                }
+                input {
+                    max-width: 200px;
+                }
+                .btnsubmit {
+                    display: block;
+                }
+            }
+        }
+        
     }
 }

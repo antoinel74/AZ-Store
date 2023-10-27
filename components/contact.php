@@ -1,3 +1,4 @@
+
 <html>
 
     <section class="info">
@@ -21,7 +22,7 @@
                 </label>
                 <br>
                 <input type="text" name="message" class="inputMessage"> 
-                <input class="btn" type='submit' name='submit' value='Submit'/>
+                <input class="btnsubmit" type='submit' name='submit' value='Submit'/>
             </form>
         </div>
 
@@ -29,7 +30,7 @@
             <ul>
             <h2 class="following">Follow Us!</h2>
                 <li><a href="https://www.nike.com/be/fr/" target="_blank">
-                    <img src="assets\img\network\nike.png">
+                    <img src="../assets/img/network/nike.png">
                 </a></li>
                 <li><a href="https://www.facebook.com/nike/?locale=fr_FR" target="_blank">
                     <i class="fa-brands fa-facebook-f"></i>

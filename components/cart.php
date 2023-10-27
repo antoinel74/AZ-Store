@@ -5,6 +5,7 @@ $products = [];
 if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])) {
     $json_data = file_get_contents('../db/db.json');
     $products = json_decode($json_data, true);
+    echo '<div class="cart-container">';
     echo '<h1 class="page-title">Shopping Cart</h1>';
     echo '<ul class="shopping-cart">';
     $totalQuantity = count($_SESSION['cart']);
@@ -43,7 +44,7 @@ $cartTotal = cartTotal($_SESSION['cart'], $products);
 
 function cartTotal($cart, $products)
 {
-    
+
     $total = 0;
     $totalTVA = 0;
     foreach ($cart as $productId) {
@@ -52,20 +53,14 @@ function cartTotal($cart, $products)
             $totalTVA += $products[$productId]['price'] / 1.20; // assuming TVA is 20%
         }
     }
-    //return $total;
-    return array(
-        'total' => $total,
-        'totalTVA' => $totalTVA
-    );
+    return $total;
 }
 ?>
 
 
 
 <div class="cart-checkout">
-    <p id="price-total-tva">Total  : <span> <?php echo $cartTotal['totalTVA'] ?> € </span></p>
+    <p id="price-total-tva">Total : <span> <?php echo $cartTotal['totalTVA'] ?> € </span></p>
     <p id="price-total">TOTAL+TVA : <span> <?php echo $cartTotal['total'] ?> € </span></p>
     <button id="checkout-btn" class="btn" onclick="window.location.href='checkout.view.php'">Go to Checkout</button>
 </div>
-
-

@@ -3,13 +3,13 @@
 ## About the project
 
 This project is part of the Becode PHP course.
-A small e-shop app built in `PHP`.
+and consist to a small e-shop app built in `PHP`.
 
 ### Features
 
 - Display the products stored in a db
-- Shopping cart /w complete checkout form.
-- Save cart data in session
+- Shopping cart /w verified and sanitized checkout form.
+- Usage of sessions to store the cart
 
 ### Built with
 
@@ -18,11 +18,9 @@ A small e-shop app built in `PHP`.
 
 ## Preview
 
-<!-- <img src="./assets/img/mobileUI_sun.png" alt="mobileUI_sun" width="200"/><img src="./assets/img/mobileUI_rain.png" alt="mobileUI_sun" width="200"/>
+![desktopUI_preview](/assets/img/preview.png)
 
-![desktopUI_preview](/assets/img/desktopUI_clouds.png) -->
-
-## Contact
+## Team / Contact
 
 [Antoine LANSMAN](https://github.com/antoinel74) -
 [Rosalie BOULARD](https://github.com/RosaBld) -
