@@ -1,6 +1,6 @@
 <?php
     echo "
-        <section class='latest-product'>
+        <section id='products' class='latest-product'>
             <div class='product-section'>
                 <h3><span class='blue'>Our</span> last products</h3>
                 <div class='products'>";
