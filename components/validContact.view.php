@@ -29,7 +29,7 @@
         // }
         // ?>
         -->
-            <button class="btns" onclick='window.location.href="./contact.view.php"'>No</button>
+            <button class="btns" onclick='window.location.href="contact.view.php"'>No</button>
         </div>
         <?php
     }
