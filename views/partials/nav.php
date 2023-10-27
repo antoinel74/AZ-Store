@@ -18,7 +18,7 @@ if (isset($_SESSION['cart'])) {
         <div class="homeAbout">
             <li><a href="index.php">Home</a></li>
             <li><a href="about.view.php">About</a></li>
-            <li><a href="#products">Products</a></li>
+            <li><a href="index.php#products">Products</a></li>
             <li><a href="contact.view.php">Contact</a></li>
         </div>
         <div class="login">

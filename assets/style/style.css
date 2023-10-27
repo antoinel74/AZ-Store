@@ -749,7 +749,10 @@ body {
   margin: 5% 0% 5% 0%;
 }
 
-.contactinfo {
+.textinfo {
+  margin: 5% 0% 5% 0%;
+}
+.textinfo .contactinfo {
   color: white;
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
@@ -762,4 +765,59 @@ body {
   font-family: "Nunito Sans", sans-serif;
   font-size: 2rem;
   text-align: center;
+}
+
+.btns-cont {
+  text-align: center;
+  margin-bottom: 2%;
+}
+.btns-cont .btns {
+  background-color: #3470db;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+.btns-cont .btns:hover {
+  background-color: white;
+  color: #3470db;
+}
+
+.newmessage {
+  color: white;
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 4rem;
+  max-width: 50rem;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+}
+
+.btnback-cont {
+  text-align: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.btnback-cont .btnback {
+  background-color: #3470db;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: all 0.2s ease;
+  margin: 0 auto;
+}
+.btnback-cont .btnback:hover {
+  background-color: white;
+  color: #3470db;
 }/*# sourceMappingURL=style.css.map */
