@@ -1,6 +1,10 @@
 body {
-  background: rgb(17,24,39);
-  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(17,24,39,1) 50%);
+  background: rgb(17, 24, 39);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(17, 24, 39, 1) 50%
+  );
 }
 
 .product-card {
@@ -47,4 +51,10 @@ body {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
+  p {
+    font-size: 0.9rem;
+  }
+  span {
+    font-size: 1rem;
+  }
 }

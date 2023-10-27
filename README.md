@@ -24,8 +24,6 @@ A small e-shop app built in `PHP`.
 
 ## Contact
 
-Antoine LANSMAN - antoine.lansman@gmail.com
-Rosalie BOULARD
-[Antoine LANSMAN](https://github.com/antoinel74)
-[Rosalie BOULARD](https://github.com/RosaBld)
-[Okyl IRADUKUNDA](https://github.com/Okly2023)
+[Antoine LANSMAN](https://github.com/antoinel74) -
+[Rosalie BOULARD](https://github.com/RosaBld) -
+[Okly IRADUKUNDA](https://github.com/Okly2023)
