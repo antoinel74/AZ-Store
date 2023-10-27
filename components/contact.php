@@ -22,7 +22,7 @@
                 </label>
                 <br>
                 <input type="text" name="message" class="inputMessage"> 
-                <input class="btn" type='submit' name='submit' value='Submit'/>
+                <input class="btnsubmit" type='submit' name='submit' value='Submit'/>
             </form>
         </div>
 

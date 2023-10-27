@@ -743,6 +743,63 @@ footer {
   padding-bottom: 2%;
 }
 
+@media (max-width: 468px) {
+  .story h2 {
+    font-size: 2rem;
+  }
+  .story p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  .quality h2 {
+    font-size: 2rem;
+  }
+  .quality p {
+    font-size: 1rem;
+    max-width: 300px;
+  }
+  .reviews h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 468px) and (max-width: 768px) {
+  .story h2 {
+    font-size: 3rem;
+  }
+  .story p {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  .quality h2 {
+    font-size: 3rem;
+  }
+  .quality p {
+    font-size: 1rem;
+    max-width: 400px;
+  }
+  .reviews h2 {
+    font-size: 3rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1056px) {
+  .story h2 {
+    font-size: 3rem;
+  }
+  .story p {
+    font-size: 1rem;
+    max-width: 700px;
+  }
+  .quality h2 {
+    font-size: 3rem;
+  }
+  .quality p {
+    font-size: 1rem;
+    max-width: 700px;
+  }
+  .reviews h2 {
+    font-size: 3rem;
+  }
+}
 .info {
   display: flex;
   flex-direction: row;
@@ -762,6 +819,7 @@ footer {
 }
 .contact form {
   padding-top: 2.5%;
+  height: 80vh;
 }
 .contact form label {
   color: white;
@@ -770,14 +828,28 @@ footer {
 }
 .contact form input {
   width: 500px;
-  margin: 0% 0% 5% 0%;
+  margin: 0 auto;
 }
 .contact form .inputMessage {
   height: 200px;
 }
-.contact form .btn {
+.contact form .btnsubmit {
   font-family: "Nunito Sans", sans-serif;
   font-size: 1rem;
+  background-color: #3470db;
+  border: none;
+  color: white;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  letter-spacing: 1;
+  cursor: pointer;
+  font-size: 0.7rem;
+  transition: all 0.2s ease;
+}
+.contact form .btnsubmit:hover {
+  background-color: white;
+  color: #3470db;
 }
 
 .network ul {
@@ -800,15 +872,57 @@ footer {
   font-size: 2rem;
   color: white;
   text-align: center;
-  margin: 5% 0% 5% 0%;
+  margin: 0 auto;
 }
 
+@media (max-width: 468px) {
+  .contact {
+    height: 100vh;
+  }
+  .contact .formContact {
+    font-size: 1.5rem;
+  }
+  .contact .formContact form label {
+    color: white;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1rem;
+  }
+  .contact .formContact form input {
+    max-width: 100px;
+    margin: 0% 0% 5% 0%;
+  }
+  .network ul .following {
+    font-size: 1.5rem;
+  }
+  .network ul li img {
+    width: 25px;
+  }
+  .network ul li i {
+    font-size: 1.5rem;
+    color: white;
+  }
+}
+@media (min-width: 468px) and (max-width: 1055px) {
+  .contact .formContact form {
+    height: 70vh;
+  }
+  .contact .formContact form label {
+    font-size: 1rem;
+  }
+  .contact .formContact form input {
+    max-width: 200px;
+  }
+  .contact .formContact form .btnsubmit {
+    display: block;
+  }
+}
 body {
   position: relative;
 }
 
 .textinfo {
   margin: 5% 0% 5% 0%;
+  height: 80vh;
 }
 .textinfo .contactinfo {
   color: white;
@@ -827,7 +941,7 @@ body {
 
 .btns-cont {
   text-align: center;
-  margin-bottom: 2%;
+  padding-bottom: 2rem;
 }
 .btns-cont .btns {
   background-color: #3470db;
@@ -845,6 +959,10 @@ body {
 .btns-cont .btns:hover {
   background-color: white;
   color: #3470db;
+}
+
+.valid {
+  height: 80vh;
 }
 
 .newmessage {
@@ -878,4 +996,15 @@ body {
 .btnback-cont .btnback:hover {
   background-color: white;
   color: #3470db;
+}
+
+@media (max-width: 468px) {
+  .newmessage {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 468px) and (max-width: 1055px) {
+  .newmessage {
+    font-size: 3rem;
+  }
 }/*# sourceMappingURL=style.css.map */
