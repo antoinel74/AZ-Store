@@ -373,19 +373,23 @@ body {
   padding-left: 5%;
   display: flex;
 }
-.topnav .store li {
+.topnav .store ul {
+  display: flex;
+  flex-direction: row;
+}
+.topnav .store ul li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .store li a {
+.topnav .store ul li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .store li a:hover {
+.topnav .store ul li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
@@ -394,19 +398,23 @@ body {
   display: flex;
   gap: 30px;
 }
-.topnav .homeAbout li {
+.topnav .homeAbout ul {
+  display: flex;
+  flex-direction: row;
+}
+.topnav .homeAbout ul li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .homeAbout li a {
+.topnav .homeAbout ul li a {
   text-decoration: none;
   color: white;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .homeAbout li a:hover {
+.topnav .homeAbout ul li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
@@ -417,29 +425,33 @@ body {
   justify-content: center;
   align-items: center;
 }
-.topnav .login li {
+.topnav .login ul {
+  display: flex;
+  flex-direction: row;
+}
+.topnav .login ul li {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.topnav .login li a {
+.topnav .login ul li a {
   text-decoration: none;
   color: white;
   margin-right: 10px;
   font-family: "Nunito Sans", sans-serif;
   padding: 20px 10px 20px 10px;
 }
-.topnav .login li a:hover {
+.topnav .login ul li a:hover {
   color: #fcd34d;
   background-color: #020e24;
   border-radius: 5%;
 }
-.topnav .login li .cart {
+.topnav .login ul li .cart {
   width: 25px;
   filter: brightness(200%) invert(100%);
 }
-.topnav .login li span {
+.topnav .login ul li span {
   font-weight: 200;
   font-size: 0.9rem;
 }
