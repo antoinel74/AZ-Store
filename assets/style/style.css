@@ -183,6 +183,12 @@ body {
   display: flex;
   justify-content: space-between;
 }
+.product-info p {
+  font-size: 0.9rem;
+}
+.product-info span {
+  font-size: 1rem;
+}
 
 .btn {
   background-color: #3470db;
@@ -526,6 +532,9 @@ body {
   justify-content: space-between;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 .footer .homeAbout {
   display: flex;
@@ -584,8 +593,19 @@ body {
   line-height: 1.8;
 }
 
+.checkout-container {
+  display: flex;
+  width: 100%;
+}
+.checkout-container .cart-container {
+  width: 50%;
+}
+.checkout-container .checkout-form {
+  width: 50%;
+}
+
 .success {
-  color: #07ee07;
+  color: #328c32;
   font-weight: bold;
   margin-top: 10px;
   text-align: center;
@@ -593,13 +613,11 @@ body {
 }
 
 .checkout-form {
-  max-width: 500px;
-  margin: 0 auto;
+  margin: 2rem 1rem;
   margin-top: 15px;
   padding: 20px;
   padding-bottom: 5px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 8px;
   font-family: "Nunito Sans", sans-serif;
   color: white;
 }
@@ -611,11 +629,12 @@ body {
 .checkout-form input[type=text],
 .checkout-form input[type=email] {
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  height: 30px;
+  border: none;
+  border-radius: 8px;
   font-size: 16px;
   font-family: "Nunito Sans", sans-serif;
-  background: #eee4ec;
+  background: white;
   color: black;
 }
 .checkout-form input[type=submit] {
@@ -623,16 +642,31 @@ body {
   color: white;
   padding: 10px 20px;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 0.9rem;
   font-family: "Nunito Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
+  letter-spacing: 1;
 }
 .checkout-form input[type=submit]:hover {
-  background-color: #cb8fbf;
+  background-color: #328c32;
 }
 
+@media (max-width: 768px) {
+  .checkout-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .checkout-container .cart-container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .checkout-container .checkout-form {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
 .story {
   padding-top: 2%;
   padding-bottom: 2%;
