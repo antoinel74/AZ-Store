@@ -1,5 +1,10 @@
+body {
+    position: relative;
+}
+
 .textinfo{
     margin: 5% 0% 5% 0%;
+    height: 80vh;
     .contactinfo {
         color: white;
         font-family: "Nunito Sans", sans-serif;
@@ -18,7 +23,8 @@
 
 .btns-cont {
     text-align:center;
-    margin-bottom:2%;
+    padding-bottom:2rem;
+
     .btns {
         background-color: $highBlue;
         border: none;
@@ -37,3 +43,4 @@
         }
     }
 }
+

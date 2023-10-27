@@ -9,13 +9,14 @@
         // process the form data here
 
         // display the data to the user
-        
-        echo "<div class='textinfo'>";
-            echo "<p class='contactinfo'>You entered your name: " . $name . ",</p><br>";
-            echo "<p class='contactinfo'>Email: " . $mail . ",</p><br>";
-            echo "<p class='contactinfo'>and your message: " . $message . "</p><br>";
-            echo "<p class='space'>Is that correct? </p><br>";
-        echo "</div>";
+        echo "<body>";
+            echo "<div class='textinfo'>";
+                echo "<div class=validText>";
+                    echo "<p class='contactinfo'>You entered your name: " . $name . ",</p><br>";
+                    echo "<p class='contactinfo'>Email: " . $mail . ",</p><br>";
+                    echo "<p class='contactinfo'>and your message: " . $message . "</p><br>";
+                    echo "<p class='space'>Is that correct? </p><br>";
+                echo "</div>";
         ?>
         <!-- <form method='post'> -->
         <div class="btns-cont">
@@ -32,6 +33,8 @@
             <button class="btns" onclick='window.location.href="contact.view.php"'>No</button>
         </div>
         <?php
+            echo "</div>";
+        echo "</body>";
     }
 
     require "../views/partials/footer.php";
