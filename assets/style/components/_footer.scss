@@ -1,3 +1,10 @@
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -6,9 +13,6 @@
   justify-content: space-between;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 
   .homeAbout {
     display: flex;
