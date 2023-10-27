@@ -207,6 +207,10 @@ body {
   color: #3470db;
 }
 
+body {
+  position: relative;
+}
+
 .index {
   margin-top: 10%;
   margin-bottom: 5%;
@@ -524,6 +528,13 @@ body {
     margin: 0 10%;
   }
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  height: 0px;
+  width: 100%;
+}
+
 .footer {
   display: flex;
   flex-direction: row;
@@ -532,9 +543,6 @@ body {
   justify-content: space-between;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
 }
 .footer .homeAbout {
   display: flex;
@@ -568,7 +576,7 @@ body {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin-bottom: 5%;
+  padding-bottom: 5%;
   margin-top: 2%;
   gap: 5%;
 }
