@@ -67,3 +67,4 @@ function cartTotal($cart, $products)
     <p id="price-total">TOTAL+TVA : <span> <?php echo $cartTotal['total'] ?> € </span></p>
     <button id="checkout-btn" class="btn" onclick="window.location.href='checkout.view.php'">Go to Checkout</button>
 </div>
+</div>
