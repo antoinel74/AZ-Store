@@ -1,17 +1,16 @@
 .opinions {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding-bottom: 5%;
-  margin-top: 2%;
+  margin-top: 3%;
   gap: 5%;
 
   .article-opinion {
+    margin-bottom: 1rem;
     .people {
       border-radius: 50%;
       width: 80px;
-      margin-left: 40%;
       margin-bottom: 5%;
     }
 
@@ -28,7 +27,7 @@
       color: rgb(148, 148, 148);
       font-size: 0.8rem;
       text-align: center;
-      line-height: 1.8;
+      line-height: 1.5;
     }
   }
 }
