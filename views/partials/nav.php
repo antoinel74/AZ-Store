@@ -13,17 +13,23 @@ if (isset($_SESSION['cart'])) {
 <header>
     <nav class="topnav">
         <div class="store">
-            <li><a href="index.php">AZ[store]</a></li>
+            <ul>
+                <li><a href="index.php">AZ[store]</a></li>
+            </ul>
         </div>
         <div class="homeAbout">
-            <li><a href="../index.php">Home</a></li>
-            <li><a href="/components/about.view.php">About</a></li>
-            <li><a href="../index.php#products">Products</a></li>
-            <li><a href="/components/contact.view.php">Contact</a></li>
+            <ul>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="/components/about.view.php">About</a></li>
+                <li><a href="../index.php#products">Products</a></li>
+                <li><a href="/components/contact.view.php">Contact</a></li>
+            </ul>
         </div>
         <div class="login">
-            <li><a href="../views/cart.view.php"><img class="cart" src="../assets/img/shopping-cart.svg" alt='shoppingCart'><span class="cart-notif">(<?php echo $totalQuantity; ?>)</span></li>
-            <li><a href="/views/checkout.view.php">Login</a></li>
+            <ul>
+                <li><a href="../views/cart.view.php"><img class="cart" src="../assets/img/shopping-cart.svg" alt='shoppingCart'><span class="cart-notif">(<?php echo $totalQuantity; ?>)</span></a></li>
+                <li><a href="/views/checkout.view.php">Login</a></li>
+            </ul>
         </div>
     </nav>
 </header>
